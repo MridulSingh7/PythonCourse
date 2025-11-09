@@ -24,7 +24,6 @@ def fetch_crypto_data():
     response.raise_for_status()
     return response.json()
 
-
 def save_to_csv(data):
     file_exists = os.path.isfile(CSV_FILE)
 
